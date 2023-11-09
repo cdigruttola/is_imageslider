@@ -31,7 +31,7 @@
     ]
   ]}
 
-  <div class="homeslider swiper bg-light" {if $homeslider.slides|count > 1} data-swiper='{$sliderConfig|json_encode}'{/if}>
+  <div class="homeslider swiper" {if $homeslider.slides|count > 1} data-swiper='{$sliderConfig|json_encode}'{/if}>
     <ul class="swiper-wrapper homeslider__list">
       {images_block}
         {foreach from=$homeslider.slides item=slide}
